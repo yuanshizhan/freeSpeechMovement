@@ -140,7 +140,7 @@ public class ToqActivity extends Activity {
                 sproul.setLongitude(-122.25914);
                 double distance = location.distanceTo(sproul);
 
-                if (distance <= 5000.0 && !sent) {      // NOT DONE. NEED TO ONLY SEND ONCE
+                if (distance <= 50.0 && !sent) {      // NOT DONE. NEED TO ONLY SEND ONCE
                     sendNotification();
                     sent = true;
                 }
